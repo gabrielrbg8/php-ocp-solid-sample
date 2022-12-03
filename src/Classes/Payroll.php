@@ -1,6 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Classes;
+
+use Collaborator;
 
 class Payroll
 {
@@ -12,14 +16,8 @@ class Payroll
      * @param $collaborator
      * @return float $total
      */
-    public function getTotal($collaborator)
+    public function getTotal(Collaborator $collaborator)
     {
-        if ($collaborator instanceof EffectiveCollaborator) {
-            $this->total = $collaborator->getSalary();
-        } else if ($collaborator instanceof InternCollaborator) {
-            $this->total = $collaborator->getInternshipScholarship();
-        }
-
-        return $this->total;
+        return $collaborator->getPayment();
     }
 }

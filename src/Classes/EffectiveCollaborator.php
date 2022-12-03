@@ -1,12 +1,23 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Classes;
 
-class EffectiveCollaborator
+require_once 'Interfaces/Collaborator.php';
+
+use Collaborator;
+
+class EffectiveCollaborator implements Collaborator
 {
     public $salary;
 
-    public function getSalary()
+    public function setPayment(float $salary)
+    {
+        $this->salary = $salary;
+    }
+
+    public function getPayment(): float
     {
         return $this->salary;
     }
