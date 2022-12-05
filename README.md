@@ -1,5 +1,5 @@
 # SOLID Open/Closed Principle sample with PHP
-###### _In this repository you can see a sample of a little PHP project with Open/Closed SOLId principle, and the inverse, without that._
+###### _In this repository you can see a sample of a little PHP project with Open/Closed SOLID principle, and the inverse, without that._
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
